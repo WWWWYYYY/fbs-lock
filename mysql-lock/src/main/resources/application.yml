@@ -1,0 +1,15 @@
+server:
+  port: 8099
+
+spring.datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+#    springboot2必须追加serverTimezone=GMT%2B8 ，否则报错
+    url: jdbc:mysql://127.0.0.1:3306/fbs_lock?serverTimezone=GMT%2B8
+    username: root
+    password:
+
+#myb
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+
+
